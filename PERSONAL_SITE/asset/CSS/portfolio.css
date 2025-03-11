@@ -1,0 +1,128 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body, html {
+  background-color: #FFFFFF;
+  font-family: "sans-serif";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  width: 100%; }
+
+p {
+  font-family: "sans-serif";
+  font-size: 20px; }
+
+h1 {
+  font-weight: 700;
+  padding-bottom: 20px;
+  color: #0C80A1;
+  text-align: center; }
+
+h2 {
+  font-weight: 700;
+  text-align: center; }
+
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 15px;
+  align-items: center;
+  padding-bottom: 30px; }
+
+.col-container {
+  color: #0C80A1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.img-portfolio {
+  padding: 10px 0 10px 0;
+  cursor: pointer;
+  height: 300px;
+  width: 400px;
+  object-fit: cover; }
+
+.text-containar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 40px 10px 40px; }
+
+.text {
+  text-align: center;
+  padding-top: 10px; }
+
+button {
+  display: inline-block;
+  padding: 15px;
+  border: 1px solid #085a72;
+  border-radius: 4px;
+  background-color: #0C80A1;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  font-size: 30px; }
+
+button a {
+  text-decoration: none; }
+
+button a:link {
+  color: #FFFFFF; }
+
+button a:visited {
+  color: #FFFFFF; }
+
+button a:hover {
+  background-color: none; }
+
+button a:active {
+  color: #FFFFFF; }
+
+.button-grid-container {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* Media query per schermi più grandi */
+@media (min-width: 600px) {
+  body {
+    padding-top: 300px;
+    padding-bottom: 100px; }
+
+  h1 {
+    font-size: 50px; }
+
+  h2 {
+    font-size: 40px; }
+
+  .row-category-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+
+  .col-container {
+    margin-left: 10px;
+    margin-right: 10px; }
+
+  .img-portfolio {
+    height: 300px;
+    object-fit: cover; } }
+
+/*# sourceMappingURL=portfolio.css.map */

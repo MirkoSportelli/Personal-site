@@ -1,0 +1,71 @@
+
+// variables
+$primary-color:#FFFFFF;
+$secondary-color:#0C80A1;
+$primary-font: 'sans-serif';
+
+//general
+footer{
+  width: 100%;
+  position:fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+}
+
+//menu containar
+.footer-menu-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px; 
+  background-color: $secondary-color; 
+  color: $primary-color;
+  padding: 20px; 
+  text-align: center; 
+  box-sizing: border-box;
+ 
+}
+
+// menu 
+footer li {
+  padding: 10px;
+  cursor: pointer; 
+  position: relative; 
+  border-left: 2px solid $primary-color;
+  
+}
+
+footer li:nth-child(4n+1) {
+  border-left: none;
+}
+
+
+
+// menu links style
+li{
+  list-style-type: none;
+}
+
+li a{
+  text-decoration: none;
+}
+
+li a:link {
+  color: $primary-color; 
+}
+
+
+li a:visited {
+  color: $primary-color;
+}
+
+li a:hover {
+  background-color:none;
+}
+
+li a:active {
+  color: $primary-color; 
+}
+
+

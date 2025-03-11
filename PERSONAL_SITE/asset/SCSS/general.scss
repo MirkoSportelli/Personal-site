@@ -1,0 +1,274 @@
+//variables
+$primary-color:#FFFFFF;
+$secondary-color:#0C80A1;
+$primary-font: 'sans-serif';
+
+// Variables for button styles
+$button-background-color:$secondary-color;
+$button-text-color: $primary-color;
+$button-padding: 15px;
+$button-border-radius: 4px;
+$button-border: 1px solid darken($button-background-color, 10%);
+$button-font-weight:700;
+$button-font-height:30px;
+
+$button-background-color-odd-col:$primary-color;
+$button-text-color-odd-col:$secondary-color;
+$button-font-height-grid:20px;
+
+
+
+//Variables for grid
+$grid-tamplate-columns-phone: 1fr;
+$grid-tamplate-columns-desktop:1fr 1fr 1fr;
+
+//Variables for images in grid
+$height-image-in-grid:200px;
+
+//Variables for images end container
+$height-image-end-container: 100px;
+//$width-image-end-container: ;
+$border-radius-image-container: 50px;
+
+// Mixin
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//Reset CSS
+
+*{
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+//Base styles mobile-first
+
+body,html{
+  background-color: $primary-color;
+  font-family: $primary-font;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  width: 100%;
+  
+}
+
+p{
+  font-family: $primary-font;
+  font-size: 20px;
+}
+
+h2{
+  font-weight: 100;
+  text-align: center;
+}
+
+
+// Button style
+button {
+  display: inline-block;
+  padding: $button-padding;
+  border: $button-border;
+  border-radius: $button-border-radius;
+  background-color: $button-background-color;
+  color: $button-text-color;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: $button-font-weight;
+  font-size: $button-font-height;
+}
+
+// Button style - link style
+button a{
+  text-decoration: none;
+}
+
+button a:link {
+  color: $primary-color; 
+}
+
+
+button a:visited {
+  color: $primary-color; 
+}
+
+button a:hover {
+  background-color:none; 
+}
+
+button a:active {
+  color: $primary-color;
+}
+
+
+// Page - entry content 
+
+.entry-content{
+  padding: 20px 0 20px 0;
+
+}
+
+.title-container,
+.subtitle-container,
+.Join-me-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 2;
+  padding: 10px;
+  
+}
+
+.spacer{
+  height: 50px;
+}
+
+// Page - middle content
+
+
+//Grid
+.home-middle-grid{
+  display: grid;
+  grid-template-columns: $grid-tamplate-columns-phone;
+  column-gap: 15px;
+  align-items: center;
+}
+
+// Columns
+.col1-container,
+.col2-container,
+.col3-container{
+  background-color: $secondary-color;
+  color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  
+}
+
+.col2-container{
+  background-color:$primary-color;
+  color: $secondary-color;
+}
+
+
+//images in grid
+.images-grid-container,
+.img-software-consulting-grid{
+  padding: 10px 0 10px 0;
+  cursor: pointer; 
+}
+
+
+.img-software-develop,
+.img-software-consulting,
+.img-software-help{
+  height: 300px;
+  width: 400px;
+  object-fit: cover;
+}
+
+//text in grid
+.text-grid-containar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 40px 10px 40px;
+}
+
+.text-grid{
+  text-align: center;
+  
+}
+
+//CTA in grid
+.button-grid-container{
+  padding: 20px 0;
+}
+
+.button-discover-it-col1{
+  background-color: $button-background-color-odd-col;
+  color:$button-text-color-odd-col;
+  font-size: $button-font-height-grid;
+}
+
+
+// Page - end content 
+.end-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 300px;
+}
+
+//image
+.image-profile-end-container{
+  height: $height-image-end-container;
+  border-radius:$border-radius-image-container;
+  object-fit:cover;
+  cursor: pointer;
+}
+
+//text
+.text-container-end-container{
+  display: flex;
+  align-items: center;
+}
+
+.text-end-container{
+  text-align: center;
+  width: 300px;
+  padding: 10px;
+}
+
+
+// Media query desktop version
+
+@media (min-width: 961px) {
+
+  // general desktop
+  body{
+    padding-top:100px;
+  }
+  .home-middle-grid {
+    grid-template-columns:$grid-tamplate-columns-desktop;
+  }
+
+  //entry contet desktop
+  .entry-content{
+    padding-top: 120px;
+  }
+
+  // Columns grid dektop
+  .col1-container,
+  .col2-container,
+  .col3-container{
+    border: solid;
+    border-width: 2px;
+  
+  }
+
+  // Images grid dektop
+  .img-software-develop,
+  .img-software-consulting,
+  .img-software-help {
+    height: $height-image-in-grid+100px;
+    object-fit: cover;
+  
+  }
+
+  // end conteiner text
+  .text-end-container{
+    width: 500px;
+  }
+}

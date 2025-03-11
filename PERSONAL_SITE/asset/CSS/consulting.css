@@ -1,0 +1,132 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  font-family: "sans-serif";
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box; }
+
+.discover-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  width: 100%;
+  border-radius: 10px;
+  box-sizing: border-box; }
+
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+.img-software-consulting {
+  height: 300px;
+  width: 400px;
+  object-fit: cover; }
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+
+.text h1 {
+  margin-top: 20px;
+  color: #0C80A1; }
+
+.text p {
+  line-height: 1.6; }
+
+.Join-me-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+button {
+  display: inline-block;
+  padding: 15px;
+  border: 1px solid #085a72;
+  border-radius: 4px;
+  background-color: #0C80A1;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 30px; }
+
+button a {
+  text-decoration: none; }
+
+button a:link {
+  color: #FFFFFF; }
+
+button a:visited {
+  color: #FFFFFF; }
+
+button a:hover {
+  background-color: none; }
+
+button a:active {
+  color: #FFFFFF; }
+
+/* Media query per schermi più grandi */
+@media (min-width: 600px) {
+  body {
+    padding-top: 300px; }
+
+  h1 {
+    font-size: 50px; }
+
+  .discover-container {
+    flex-direction: column;
+    flex: 1;
+    max-width: 1500px;
+    justify-content: space-between;
+    border: none;
+    box-shadow: none; }
+
+  .discover-container-first-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 50px; }
+
+  .photo {
+    display: flex;
+    align-items: center;
+    width: 50%; }
+
+  .img-software-consulting {
+    border-radius: 20px;
+    height: 400px;
+    width: 600px; }
+
+  .text {
+    width: 50%;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 20px; }
+
+  button {
+    font-size: 40px; } }
+
+/*# sourceMappingURL=consulting.css.map */

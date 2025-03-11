@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me.</title>
+  <link rel="stylesheet" href="asset/CSS/about_me.css">
+  <link rel="stylesheet" href="asset/CSS/header.css">
+  <link rel="stylesheet" href="asset/CSS/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" 
+        rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <!-- Header - first containar  -->
+    <div class="header-container-brand">
+
+      <!-- Header - first containar - mobile  -->
+      <div class="brand-container-mobile">
+        <div class="logo-mobile-container">
+          <!-- Header - first containar - mobile - logo  -->
+           <a href="index.html">
+            <img class="logo-mobile" 
+                src="asset/images/MS-DEV-17-06-2024.png" 
+                alt="logo-mobile">
+            </a>
+        </div>
+
+      <!-- Header - first containar - mobile - menu  -->
+        <div class="menu-mobile-container">
+          <!-- Header - first containar - mobile - menu - hamburger_button  -->
+          <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle" class="menu-icon">
+            <img class="icon-menu" 
+                 src="asset/icons/icons-menu.svg" 
+                 alt="">
+          </label>
+          <!-- Header - first containar - mobile - menu - list  -->
+          <nav class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="About_me.html">About</a></li>
+              <li><a href="Contact_me.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Header - first containar - logo  -->
+      <!-- Header - first containar - logo - desktop  -->
+      <div class="brand-container-desktop">
+        <a href="index.html">
+          <img class="logo-desktop" 
+              src="asset/images/MIRKO-SPORTELLI-DEV-17-06-2024.png" 
+              alt="">
+        </a>
+      </div>
+    </div>
+
+
+
+    <!-- Header - middle containar - social link  -->
+    <div class="header-container-social">
+      <!-- Header - middle containar - social link - facebook -->      
+      <div class="facebook-icon-container">
+        <a href="https://www.facebook.com/mirkuzio.spor" target="_blank">
+          <img class="facebook-icon" 
+          src="asset/icons/icons-facebook.svg" 
+          alt="facebook-icon">
+        </a>
+      </div>
+
+      <!-- Header - middle containar - social link - instagram -->
+      <div class="instagram-icon-container">
+          <a href="https://www.instagram.com/mirkuzio1/" target="_blank">
+          <img class="instagram-icon" 
+          src="asset/icons/icons-instagram.svg" 
+          alt="instagram-icon">
+        </a>
+      </div>
+
+      <!-- Header - middle containar - social link - github -->
+      <div class="github-icon-container">
+          <a href="https://github.com/MirkoSportelli/" target="_blank">
+          <img class="github-icon" 
+          src="asset/icons/icons-github.svg" 
+          alt="github-icon">
+        </a>
+      </div>
+    </div>
+
+    <!-- Header - end containar - site navigation - desktop -->
+    <div class="site-navigation">
+      <div class="header-menu-container">
+        <!-- Header - end containar - site navigation - desktop - menu -->
+        <ul class="header-menu-ul">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="About_me.html">About</a></li>
+          <li><a href="Contact_me.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    
+  </header>
+
+  <!--Page -->
+  <div class="about-me-container">
+    <div class="about-me-container-first-row">
+      <div class="photo">
+        <img class="img-profile" src="asset/images/Mirko_Sportelli_Immagine_Profilo.enc" alt="">
+      </div>
+      <div class="text">
+        <h1>About me</h1>
+        <p>I am Mirko, a web developer passionate about programming. 
+          I have experience with HTML, CSS, and Python, which I use to create 
+          and maintain websites and applications. I enjoy tackling and solving 
+          complex problems, always striving for efficient and functional 
+          solutions. One of my main qualities is active listening. 
+          I make an effort to deeply understand my clients' needs and issues to 
+          suggest the most suitable solutions. I work well in a team, 
+          communicating clearly and collaborating effectively to achieve common 
+          goals. I believe that with good dialogue and mutual understanding, 
+          excellent results can be achieved.
+        </p>
+      </div>
+    </div>
+    
+    <div class="Join-me-container">
+      <button><a href="Contact_me.html">Join me</a></button>
+    </div>
+    <div class="skills-container">
+      <div class="hard-skills-container">
+        <input type="radio" name="carousel" id="slide1-hard" checked>
+        <input type="radio" name="carousel" id="slide2-hard">
+        <h2>Hard Skills</h2>
+        <div class="slides">
+          <div class="slide">
+            <div class="col-container">
+              <div class="images-grid-container">        
+                <img src="asset/icons/icon-data-analysis.png" 
+                     alt="img_icon_data_analysis">
+              </div>
+              <div class="text-grid-containar">
+                <p class="text-grid">Data Analysis</p>
+              </div>        
+            </div>
+            <div class="col-container">
+              <div class="images-grid-container">        
+                <img src="asset/icons/icons-python.png" 
+                     alt="img_icon-python">
+              </div>
+              <div class="text-grid-containar">
+                <p class="text-grid">Python</p>
+              </div>        
+            </div>
+            <div class="col-container">
+              <div class="images-grid-container">        
+                <img src="asset/icons/icons-html.png" 
+                     alt="img_icon-html">
+              </div>
+              <div class="text-grid-containar">
+                <p class="text-grid">HTML</p>
+              </div>        
+            </div>
+          </div>
+      
+          <div class="slide">
+            <div class="col-container">
+              <div class="images-grid-container">        
+                <img src="asset/icons/icons-direct.png" 
+                     alt="img_icon_direct">
+              </div>
+              <div class="text-grid-containar">
+                <p class="text-grid">Direct</p>
+              </div>        
+            </div>
+            <div class="col-container">
+              <div class="images-grid-container">        
+                <img src="asset/icons/icons-excel.png" 
+                     alt="img_icon_excel">
+              </div>
+              <div class="text-grid-containar">
+                <p class="text-grid">Excel</p>
+              </div>        
+            </div>
+            <div class="col-container">
+              <div class="images-grid-container">        
+                <img src="asset/icons/icons-css.png" 
+                     alt="img_icon_css">
+              </div>
+              <div class="text-grid-containar">
+                <p class="text-grid">CSS</p>
+              </div>        
+            </div>
+          </div>
+        </div>
+      
+        <div class="nav-arrow arrow-back">
+          <label for="slide1-hard"><img src="asset/icons/icons-backward.png" alt=""></label>
+        </div>
+        <div class="nav-arrow arrow-forward">
+          <label for="slide2-hard"><img src="asset/icons/icons-forward.png" alt=""></label>
+        </div>
+      </div>
+
+      <div class="soft-skills-container">
+        <input type="radio" name="carousel" id="slide1-soft" checked>
+        <input type="radio" name="carousel" id="slide2-soft">
+      
+        <h2>Soft Skills</h2>
+        
+        <div class="slides">
+          <div class="slide">
+            <div class="col-container">
+              <div class="images-grid-container">        
+                <img src="asset/icons/icons-networking.png" 
+                     alt="img_icon_networking">
+              </div>
+              <div class="text-grid-containar">
+                <p class="text-grid">Networking</p>
+              </div>        
+            </div>
+            <div class="col-container">
+              <div class="images-grid-container">        
+                <img src="asset/icons/icons-resilience.png" 
+                     alt="img_icon_resilience">
+              </div>
+              <div class="text-grid-containar">
+                <p class="text-grid">Resilience</p>
+              </div>        
+            </div>
+            <div class="col-container">
+              <div class="images-grid-container">        
+                <img src="asset/icons/icons-leadership.png" 
+                     alt="img_icon_leadership">
+              </div>
+              <div class="text-grid-containar">
+                <p class="text-grid">Leadership</p>
+              </div>        
+            </div>
+          </div>
+      
+          <div class="slide">
+            <div class="col-container">
+              <div class="images-grid-container">        
+                <img src="asset/icons/icons-precision.png" 
+                     alt="img_icon-precision">
+              </div>
+              <div class="text-grid-containar">
+                <p class="text-grid">Precision</p>
+              </div>        
+            </div>
+            <div class="col-container">
+              <div class="images-grid-container">        
+                <img src="asset/icons/icons-problem-solving.png" 
+                     alt="img_icon-problem-solving">
+              </div>
+              <div class="text-grid-containar">
+                <p class="text-grid">Problem Solving</p>
+              </div>        
+            </div>
+          </div>
+        </div>
+      
+        <div class="nav-arrow arrow-back">
+          <label for="slide1-soft"><img src="asset/icons/icons-backward.png" alt=""></label>
+        </div>
+        <div class="nav-arrow arrow-forward">
+          <label for="slide2-soft"><img src="asset/icons/icons-forward.png" alt=""></label>
+        </div>
+      </div>      
+    </div>
+
+    <div class="certificates-container">
+      <input type="radio" name="carousel" id="slide1-certificate" checked>
+      <input type="radio" name="carousel" id="slide2-certificate">
+      <input type="radio" name="carousel" id="slide3-certificate">
+      <input type="radio" name="carousel" id="slide4-certificate">
+      <input type="radio" name="carousel" id="slide5-certificate">
+      
+
+      <h2>Certificates</h2>
+
+      <div class="slides-certificates">
+        <div class="slide">
+          <div class="col-container-certificate">        
+            <img class="img-certificates"
+                 src="asset/images/CERTIFICTI/data_analysis.png" 
+                 alt="data_analysis">
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="col-container-certificate">        
+            <img class="img-certificates"
+                 src="asset/images/CERTIFICTI/data-visualization.png" 
+                 alt="data_visualization">
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="col-container-certificate">        
+            <img class="img-certificates"
+                 src="asset/images/CERTIFICTI/data-studio.png" 
+                 alt="data_studio">
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="col-container-certificate">        
+            <img class="img-certificates"
+                 src="asset/images/CERTIFICTI/data_analysis_advanced.png" 
+                 alt="data_analysis_advanced">
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="col-container-certificate">        
+            <img class="img-certificates"
+                 src="asset/images/CERTIFICTI/excel.png" 
+                 alt="excel">
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="nav-arrow arrow-back">
+        <label for="slide1-certificate" class="back back-slide2"><img src="asset/icons/icons-backward.png" alt="Back"></label>
+        <label for="slide2-certificate" class="back back-slide3"><img src="asset/icons/icons-backward.png" alt="Back"></label>
+        <label for="slide3-certificate" class="back back-slide4"><img src="asset/icons/icons-backward.png" alt="Back"></label>
+        <label for="slide4-certificate" class="back back-slide5"><img src="asset/icons/icons-backward.png" alt="Back"></label>
+        <label for="slide5-certificate" class="back back-slide6"><img src="asset/icons/icons-backward.png" alt="Back"></label>
+        <label for="slide6-certificate" class="back back-slide7"><img src="asset/icons/icons-backward.png" alt="Back"></label>
+      </div>
+
+      <div class="nav-arrow arrow-forward">
+        <label for="slide2-certificate" class="forward forward-slide1"><img src="asset/icons/icons-forward.png" alt="Forward"></label>
+        <label for="slide3-certificate" class="forward forward-slide2"><img src="asset/icons/icons-forward.png" alt="Forward"></label>
+        <label for="slide4-certificate" class="forward forward-slide3"><img src="asset/icons/icons-forward.png" alt="Forward"></label>
+        <label for="slide5-certificate" class="forward forward-slide4"><img src="asset/icons/icons-forward.png" alt="Forward"></label>
+        <label for="slide6-certificate" class="forward forward-slide5"><img src="asset/icons/icons-forward.png" alt="Forward"></label>
+      </div>
+    </div>
+    <div class="CV-container">
+      <h2>Curriculum Vitae</h2>
+      <button><a href="cv.html">See My CV </a></button>
+    </div>   
+  </div>
+</div>
+
+<!-- Footer -->
+  <footer>
+    <div class="footer-menu-container">
+
+      <!-- Fppter - menu navigation -->
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="About_me.html">About</a></li>
+      <li><a href="Contact_me.html">Contact</a></li>
+    </div>
+  </footer>
+ 
+</body>
+</html>

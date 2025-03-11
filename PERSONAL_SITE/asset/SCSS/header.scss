@@ -1,0 +1,237 @@
+
+//Variables
+$primary-color:#FFFFFF;
+$secondary-color:#0C80A1;
+$primary-font: 'sans-serif';
+
+//Base styles mobile-first
+header{
+  height: 100px;
+  display: grid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;  
+  z-index: 100;
+}
+
+// first containar
+.header-container-brand{
+  background-color: $secondary-color;
+  padding-top: 20px;
+}
+
+.brand-container-mobile{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.brand-container-desktop{
+  display: none;
+}
+
+// Logo mobile MS DEV
+.logo-mobile-container,
+.menu-mobile-container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo-mobile,
+.icon-menu{
+  height: 50PX;
+}
+
+// Menu  for mobile
+.menu-mobile-container{
+  justify-content: flex-end;
+}
+
+
+#menu-toggle {
+  display: none;
+
+}
+
+.menu-icon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+  top:20px;
+  right: 50px;
+}
+
+// menu for mobile box
+.menu {
+  display: none;
+  position: fixed;
+  top: 100px;
+  right: 0px;
+  width: 200px;
+  background-color:$secondary-color;
+  color: white;
+  z-index: 999;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+// menu for mobile links
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  padding: 10px;
+  text-align: center;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+ul li a{
+  text-decoration: none;
+}
+
+ul li a:link {
+  color: $primary-color; 
+}
+
+
+ul li a:visited {
+  color: $primary-color;
+}
+
+ul li a:hover {
+  background-color:none; 
+}
+
+ ul li a:active {
+  color: $primary-color; 
+}
+
+
+#menu-toggle:checked + .menu-icon + .menu {
+  display: block;
+}
+
+.menu ul li:hover {
+  background-color: $secondary-color;
+ }
+
+
+// Icon for mobile menu button
+.icon-menu{
+  width: 100px;
+}
+
+
+.header-container-social{
+  display: none;
+}
+
+.site-navigation{
+  display: none;
+}
+
+// media query for desktop
+
+@media (min-width: 961px) {
+  
+  // header
+  header  {position: fixed;
+  padding-bottom: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  }
+  
+  //header first containar
+  .header-container-brand{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .brand-container-mobile{
+    display: none;
+  }
+  
+  .brand-container-desktop{
+    display: contents;
+  }
+
+  // logo for the desktop MIRKO SPORTELLI DEV.
+  .logo-desktop{
+    height: 150px;
+  }
+
+  // second container social
+  .header-container-social{
+    background-color:$primary-color;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    padding: 10px 0 10px 0;
+  }
+  
+  .facebook-icon-container,
+  .instagram-icon-container,
+  .github-icon-container{
+    background-color: $secondary-color;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    margin: 20px;
+  }
+  
+  .facebook-icon,
+  .instagram-icon,
+  .github-icon{
+    object-fit: cover;
+    height: 50px;
+    border-radius: 25px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  // end container site navigation
+  .site-navigation{
+    background-color: $secondary-color ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  
+  }
+  
+  .header-menu-container{
+    color: $primary-color;
+    justify-content: space-between;
+    //margin: 100px;
+    width: 500px;
+  
+  }
+  
+  .header-menu-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header-menu-ul li{
+    cursor: pointer;
+  }
+
+
+}

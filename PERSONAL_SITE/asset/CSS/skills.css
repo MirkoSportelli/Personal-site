@@ -1,0 +1,161 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  font-family: "sans-serif";
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box; }
+
+  .hard-skills-container,
+  .soft-skills-container {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  .hard-skills-container h2,
+  .soft-skills-container h2{
+    color:#0C80A1;
+    font-size: 34px;
+  }
+
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 200%;
+  }
+
+  .slide {
+    width: 50%;
+    display: flex;
+  }
+
+  .col-container {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Make image containers round and set background color */
+  .images-grid-container {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; /* Make the container round */
+    background-color: #0C80A1; /* Set background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Center the container horizontally */
+  }
+
+  /* Render images as round */
+  .images-grid-container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Make images round */
+  }
+
+  .text-grid {
+    margin-top: 10px;
+  }
+
+  .nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  /* Position the back arrow more externally */
+  .arrow-back {
+    left: -10px; /* Move arrow to the original position */
+  }
+
+  /* Position the forward arrow more externally */
+  .arrow-forward {
+    right: -10px; /* Move arrow to the original position */
+  }
+
+  /* Hide all radio buttons */
+  input[type="radio"] {
+    display: none;
+  }
+
+  /* Show the slide corresponding to the radio button that is checked */
+  input[type="radio"]:nth-of-type(1):checked ~ .slides {
+    transform: translateX(0%);
+  }
+
+  input[type="radio"]:nth-of-type(2):checked ~ .slides {
+    transform: translateX(-50%);
+  }
+
+    /* Show the slide corresponding to the radio button that is checked */
+    input[type="radio"]:nth-of-type(3):checked ~ .slides {
+      transform: translateX(0%);
+    }
+  
+    input[type="radio"]:nth-of-type(4):checked ~ .slides {
+      transform: translateX(-50%);
+    }
+
+  /* Style the navigation arrows */
+  .nav-arrow img {
+    width: 100%;
+    height: auto;
+  }
+/* Media query per schermi più grandi */
+@media (min-width: 600px) {
+  body {
+    padding-top: 300px; }
+
+  h1 {
+    font-size: 50px; }
+
+  .about-me-container {
+    flex-direction: column;
+    flex: 1;
+    max-width: 1500px;
+    justify-content: space-between;
+    border: none;
+    box-shadow: none; }
+
+  .about-me-container-first-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 50px; }
+
+  .photo {
+    display: flex;
+    align-items: center;
+    width: 50%; }
+
+  .img-profile {
+    border-radius: 20px;
+    height: 300px; }
+
+  .text {
+    width: 50%;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 20px; }
+
+  button {
+    font-size: 40px; } }
+
+/*# sourceMappingURL=about_me.css.map */
